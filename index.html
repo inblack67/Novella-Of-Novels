@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Novella Of Novels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- StyleSheet -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Skeleton -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+/>
+
+<!-- Fonts -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>Novels</h1>
+
+<form id="book-form">
+
+<div>
+<label for="title">Title</label>
+<input id="title" type="text" class="u-full-width">
+</div>
+
+<div>
+<label for="author">Author</label>
+<input id="author" type="text" class="u-full-width">
+</div>
+
+<div>
+<label for="isbn#">ISBN#</label>
+<input id="isbn" type="text" class="u-full-width">
+</div>
+
+<div id="submit">
+  <input type="submit" class="u-full-width danger" value="Submit">
+</div>
+
+
+</form>
+
+
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ISBN</th>
+      <th></th>
+    </tr>
+  </thead>
+  
+
+  <tbody id="book-list">
+  </tbody>
+  
+</table>
+
+</div>
+
+
+
+<script src="./app.js">
+</script>
+
+<!-- <script src="./appes6.js"></script> -->
+
+</body>
+
+</html>

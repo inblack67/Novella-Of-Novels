@@ -1,0 +1,35 @@
+body{
+  background: rgb(121, 134, 207) no-repeat center center/cover;
+  zoom: 70%;
+  background-image: url('../img/book2.jpg');
+  min-height: 100rem;
+}
+
+.container{
+  color: white;
+}
+
+#submit .danger{
+  background: #333;
+  color: white;
+}
+
+.success, .error, .deletion{
+  padding: 5px;
+  margin: 5px 0 15px 0;
+  color: white;
+}
+
+.success{
+  background: lightcoral;
+  color: black;
+}
+
+.error{
+  background: red;
+}
+
+.deletion{
+  background: pink;
+  color: black;
+}
