@@ -1,6 +1,5 @@
 body{
   background: rgb(121, 134, 207) no-repeat center center/cover;
-  zoom: 70%;
   background-image: url('../img/book2.jpg');
   min-height: 100rem;
 }

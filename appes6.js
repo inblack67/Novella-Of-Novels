@@ -65,6 +65,44 @@ e.parentElement.parentElement.remove();
 }
 }
 
+class Store
+{
+  static getBooks()
+  {
+    let books;
+    if(localStorage.getItem('books')===null)
+    {
+      books = [];
+    }
+    else
+    {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+
+    return books;
+  }
+
+  static addBooks(book)
+  {
+    const books = Store.getBooks();
+    books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+    // set it as books 
+    // key = books, value = "title":".."....
+  }
+
+  static deleteBooks()
+  {
+
+  }
+
+  static displayBooks()
+  {
+
+  }
+
+}
+
 
 
 // Events
@@ -92,6 +130,10 @@ const book = new Book(title,author,isbn);
   else
   {
     ui.addToBookList(book);
+
+    // Adding to local storage
+    Store.addBooks(book);
+
     ui.alertDisplay('Book Added','success');
 
     ui.clearFields();
