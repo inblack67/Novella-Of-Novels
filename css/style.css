@@ -1,7 +1,7 @@
 body{
   background: rgb(121, 134, 207) no-repeat center center/cover;
-  background-image: url('../img/book2.jpg');
-  min-height: 100rem;
+  background-image: url('../img/book7.jpg');
+  min-height: 100vh;
 }
 
 .container{
